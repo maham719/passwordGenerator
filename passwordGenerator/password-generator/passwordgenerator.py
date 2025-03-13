@@ -13,7 +13,7 @@ def generate_password(Length,use_digits,use_special):
     return ' '.join(random.choice(characters) for _ in range(Length))
 
 st.title("Password Generator")
-Length= st.slider("Select Password Length" , min_value=6 , max_value=32, value=12)
+Length= st.slider("Select Password Length" , min_value=6 , max_value=20, value=12)
 use_digits=st.checkbox("Include Digits")
 use_special=st.checkbox("Include special characters")
 
